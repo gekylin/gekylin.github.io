@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://dkylin.com/archives/2019/android-studio-necessary-config.html</loc>
+    <lastmod>2019-01-25</lastmod>
+  </url>  <url>
+    <loc>http://dkylin.com/archives/2019/android-studio-quality-plugins.html</loc>
+    <lastmod>2019-01-25</lastmod>
+  </url>  <url>
+    <loc>http://dkylin.com/archives/2019/android-studio-installation.html</loc>
+    <lastmod>2019-01-25</lastmod>
+  </url>  <url>
     <loc>http://dkylin.com/archives/2019/qiniu-backup-images.html</loc>
     <lastmod>2019-01-16</lastmod>
   </url>  <url>
@@ -46,10 +55,10 @@
     <loc>http://dkylin.com/archives/2016/build-blog-by-hexo-advanced.html</loc>
     <lastmod>2017-01-06</lastmod>
   </url>  <url>
-    <loc>http://dkylin.com/archives/2016/science-online-used-lantern.html</loc>
+    <loc>http://dkylin.com/archives/2016/git-github-base.html</loc>
     <lastmod>2016-07-31</lastmod>
   </url>  <url>
-    <loc>http://dkylin.com/archives/2016/git-github-base.html</loc>
+    <loc>http://dkylin.com/archives/2016/science-online-used-lantern.html</loc>
     <lastmod>2016-07-31</lastmod>
   </url>  <url>
     <loc>http://dkylin.com/archives/2016/quality-software-and-resource.html</loc>

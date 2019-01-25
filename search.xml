@@ -4,6 +4,87 @@
   
     
     <entry>
+      <title>Android Studio 中那些最好用的插件</title>
+      <link href="/archives/2019/android-studio-quality-plugins.html"/>
+      <url>/archives/2019/android-studio-quality-plugins.html</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://i.loli.net/2019/01/24/5c49c4d7bc787.jpeg" alt="Android-Studio-3.0-logo.jpeg"></p><blockquote><p>待完成…</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> Android </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Android </tag>
+            
+            <tag> Android Studio </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Android Studio 安装后必做的配置</title>
+      <link href="/archives/2019/android-studio-necessary-config.html"/>
+      <url>/archives/2019/android-studio-necessary-config.html</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://i.loli.net/2019/01/24/5c49c4d7bc787.jpeg" alt="Android-Studio-3.0-logo.jpeg"></p><p>在上一文：<a href="http://dkylin.com/archives/2019/android-studio-installation.html">Android Studio 超详细安装教程</a> 中，我们已经成功的安装了 Android Studio 开发工具，并进行了第一次启动前的初步设置。然而这点设置是远远不够的，为了让我们的开发工具能够使用得更加得心应手，还需要更多的设置。</p><a id="more"></a><h2 id="一、系统环境及下载资源"><a href="#一、系统环境及下载资源" class="headerlink" title="一、系统环境及下载资源"></a>一、系统环境及下载资源</h2><h3 id="1-1-安装环境"><a href="#1-1-安装环境" class="headerlink" title="1.1 安装环境"></a>1.1 安装环境</h3><ul><li>电脑系统 : Windows 10</li><li>JDK 版本 : 1.8</li><li>Android Studio : 3.2.1</li></ul><h3 id="1-2-下载资源"><a href="#1-2-下载资源" class="headerlink" title="1.2 下载资源"></a>1.2 下载资源</h3><ul><li><a href="https://developer.android.com/studio/?hl=zh-cn" target="_blank" rel="noopener">官方下载地址(需翻墙)</a></li><li><a href="http://www.android-studio.org/" target="_blank" rel="noopener">国内Android Studio下载地址(不需翻墙)</a></li></ul><p>官方下载地址是需要翻墙才可以进入并且下载的，国内下载地址虽然可以不用翻墙，但是国内的往往不是最新版本的Android Studio ，如果需要体验最新版本的 Android Studio 还请前往官方下载地址进行下载安装。</p><h2 id="二、设置"><a href="#二、设置" class="headerlink" title="二、设置"></a>二、设置</h2><h3 id="2-1-自动导包"><a href="#2-1-自动导包" class="headerlink" title="2.1 自动导包"></a>2.1 自动导包</h3><p>在日常编程中，我们可以使用 Alt + Enter 进行导包，使用 Ctrl + Alt + O 来清除无用包，但是这些事情其实都是可以自动完成的。</p><ol><li>File -&gt; Settings 打开设置</li><li>选择 Editor -&gt; General -&gt; Auto Import</li><li>勾选 Add unambiguous imports on the fly</li><li>勾选 Optimize imports on the fly(on current project)</li><li>点击 Apply 进行应用</li></ol><p><img src="https://i.loli.net/2019/01/24/5c49d8273ee4b.png" alt="android-studio-config-setp-11.png"></p><h3 id="2-2-字体大小"><a href="#2-2-字体大小" class="headerlink" title="2.2 字体大小"></a>2.2 字体大小</h3><p>Android Studio 的界面 UI 中的字体大小和代码中的字体大小都是 12 。对于我们来说可能有点小了，看着不是很舒服。所以我们需要对字体大小进行设置。</p><p>修改代码字体大小：</p><ol><li>File -&gt; Settings 打开设置</li><li>选择 Editor -&gt; Font</li><li>修改 Size 后的值，如： 14</li><li>点击 Apply 进行应用</li></ol><p><img src="https://i.loli.net/2019/01/24/5c49da008e48f.png" alt="android-studio-config-setp-12.png"></p><p>修改软件界面 UI 中的字体大小：</p><ol><li>File -&gt; Settings 打开设置</li><li>选择 Appearance &amp; Behavior -&gt; Appearance</li><li>勾选 Override default fonts by (not recommended):</li><li>修改 Size 后的值，如： 14</li><li>点击 Apply 进行应用</li></ol><p><img src="https://i.loli.net/2019/01/24/5c49da00a2914.png" alt="android-studio-config-setp-13.png"></p><h3 id="2-3-命名前缀"><a href="#2-3-命名前缀" class="headerlink" title="2.3 命名前缀"></a>2.3 命名前缀</h3><p>在 Android 开发中我们常常遵循一些代码开发规范，在Android 源码中我们可以看到通常成员变量都是以‘m’开头。其实在 Android Studio 中可以在自动生成字段名称的时候加上自定义的前缀。比如：</p><ul><li>非共有，非静态的成员变量以’m’开始</li><li>静态成员变量以’s’开始</li></ul><ol><li>File -&gt; Settings 打开设置</li><li>选择 Editor -&gt; Code Style -&gt; Java</li><li>选择 Code Generation 标签</li><li>给Field 添加一个’m’前缀，给Static filed 添加一个’s’前缀</li><li>点击 Apply 进行应用</li></ol><p><img src="https://i.loli.net/2019/01/24/5c49dbc804da8.png" alt="android-studio-config-setp-14.png"></p><h3 id="2-4-Log-颜色"><a href="#2-4-Log-颜色" class="headerlink" title="2.4 Log 颜色"></a>2.4 Log 颜色</h3><p>Darcula 主题中 Logcat 的默认配色只有红白两种颜色，非常不便于我们区分 Log 的类型。所以我们可以通过修改不同级别的 Log 的颜色来加以区分。</p><ol><li>File -&gt; Settings 打开设置</li><li>选择 Editor -&gt; Code Scheme -&gt; Android Logcat</li><li>选择一个级别名称，如：Assert</li><li>取消勾选 Inherit values from</li><li>在 Foreground 后面选择对应的颜色（可以按照下面的颜色表进行设置，也可自行设置）</li><li>依次设置其他级别的 Log 的颜色</li><li>点击 Apply 进行应用</li></ol><p><img src="https://i.loli.net/2019/01/25/5c4a6dc1d5805.png" alt="android-studio-config-setp-15.png"></p><p>点击 <strong>Foreground</strong> 后面的颜色，进行颜色选择。</p><p><img src="https://i.loli.net/2019/01/25/5c4a6dc1f0c69.png" alt="android-studio-config-setp-16.png"></p><p>选择好颜色之后，点击 <strong>Choose</strong> 即可。其他级别的颜色设置同上。</p><p>Log 颜色表：</p><table><thead><tr><th>Log 级别</th><th>颜色</th></tr></thead><tbody><tr><td>Assert</td><td>#AA66CC</td></tr><tr><td>Debug</td><td>#33B5E5</td></tr><tr><td>Error</td><td>#FF4444</td></tr><tr><td>Info</td><td>#99CC00</td></tr><tr><td>Verbose</td><td>#FFFFFF</td></tr><tr><td>Warning</td><td>#FFBB33</td></tr></tbody></table><p>修改前的 Log 的颜色：</p><p><img src="https://i.loli.net/2019/01/24/5c49de9a86f2d.png" alt="android-studio-logcat-darcula.png"></p><p>修改后的 Log 的颜色：</p><p><img src="https://i.loli.net/2019/01/24/5c49de9a88af6.png" alt="android-studio-logcat-new.png"></p><h3 id="2-5-设置代码警示线"><a href="#2-5-设置代码警示线" class="headerlink" title="2.5 设置代码警示线"></a>2.5 设置代码警示线</h3><p>在 Android Studio 安装完成之后，打开文件进行代码编辑时，你会发现编辑区域中间有一条从上到下的白线。这条白线其实是 <strong>代码警示线</strong> ，用来提醒你代码长度最好不要超过这条线。如果你是强迫症，想要去掉这条白线，该怎么做呢？</p><ol><li>File -&gt; Settings 打开设置</li><li>选择 Editor -&gt; General -&gt; Appearance</li><li>取消勾选 Show hard wrap guide (configured in Code Style options)</li><li>点击 Apply 进行应用</li></ol><p><img src="https://i.loli.net/2019/01/25/5c4a70ce9e6a7.png" alt="android-studio-config-setp-17.png"></p><p>如上图所示，在代码编辑区域有一条从上到下的白线，其关联设置选项为 <strong>Show hard wrap guide (configured in Code Style options)</strong> 。</p><p><img src="https://i.loli.net/2019/01/25/5c4a70cea2746.png" alt="android-studio-config-setp-18.png"></p><p>如需去除白线，取消此选项勾选并应用即可，如上图所示。</p><p>当然官方建议不去除此白线，用以提醒自己一行代码的长度不要过长。</p><h3 id="2-6-设置快捷键"><a href="#2-6-设置快捷键" class="headerlink" title="2.6 设置快捷键"></a>2.6 设置快捷键</h3><p>在几年前，Android 应用大多还是使用 Eclipse 进行开发，后来出了 Android Studio ，以其良好的界面，优异的特性迅速取代了 Eclipse ,目前 Android Studio 基本已经完全取代了 Eclipse 。但是还是有一些小伙伴可能是从 Eclipse 转到 Android Studio ，更熟悉 Eclipse 的快捷键，而对 Android Studio 的快捷键非常陌生，甚至别扭，所以 Android Studio 贴心的提供了多个版本的快捷键方案给用户做选择，让你更好的融入 Android Studio 的开发。</p><ol><li>File -&gt; Settings 打开设置</li><li>选择 Keymap</li><li>在下拉框中选择 Eclipse 或其他你更熟悉的快捷键方案</li><li>点击 Apply 进行应用</li></ol><p><img src="https://i.loli.net/2019/01/25/5c4a750cef4d1.png" alt="android-studio-config-setp-19.png"></p><p>虽然可以选择其他快捷键方案，但是建议使用 Android Studio 默认的快捷键方案，这才是最适合它的。</p><p>同时在这里你也可以对任一快捷键做修改，设置为你更习惯的快捷键，对此不再赘述。</p><h3 id="2-7-动态模板-Live-Templates"><a href="#2-7-动态模板-Live-Templates" class="headerlink" title="2.7 动态模板 - Live Templates"></a>2.7 动态模板 - Live Templates</h3><p><strong>Live Templates</strong> 是动态模板、活动模板或代码模板，它的作用是：</p><ul><li>代码快速补全</li><li>提高写代码的速度</li></ul><p>系统中有很多自带的模板，我们可以使用这些模板来快速生成所需要的代码。比如：</p><p><img src="https://i.loli.net/2019/01/25/5c4a79c6e2e97.png" alt="android-studio-config-setp-22.png"></p><p>如上图所示，输入 <strong>sout</strong> 就会出现提示，对应生成的代码就是 <strong>System.out.println(“”)</strong> 。</p><p><img src="https://i.loli.net/2019/01/25/5c4a79c6e4937.png" alt="android-studio-config-setp-23.png"></p><p>我们在打 Log 时经常需要定义 <strong>TAG</strong> 私有静态常量用以标记位置，使用 <strong>logt</strong> 则可以快速生成 <strong>private static final String TAG = “ClassName”</strong> 。</p><p>在 Android Studio 中还有很多很多好用的动态模板，在此就不一一介绍了，感兴趣的小伙伴可以自行去查看。</p><p>在系统提供了众多的动态模板后，有一些我们常用的代码也可以将其定义为动态模板，提高我们的工作效率。其中 Handler 是 Android 中非常常用的组件，但是使用不当则会造成内存泄漏，下面就以创建一个通过弱引用的方式解决 Handler 的内存泄漏问题并将其自定义为动态模板，方便我们的日常使用。</p><ol><li>File -&gt; Settings 打开设置</li><li>选择 Editor -&gt; Live Templates</li><li>点击右侧 <strong>+</strong> 按钮，选择 <strong>2. Template Group…</strong> 创建一个新的模板组</li><li>假设新的模板组取名为：Custom，输入名称完成创建</li><li>选中新建的 Custom 模板组，点击右侧的 <strong>+</strong> 按钮，选择 <strong>1. Live Template</strong> 创建一个新的动态模板</li><li>输入此动态模板的各项参数。</li><li>点击 Apply 进行应用并测试是否生效</li></ol><p><img src="https://i.loli.net/2019/01/25/5c4a79e058fb3.png" alt="android-studio-config-setp-20.png"></p><p>点击右侧 <strong>+</strong> 按钮，选择 <strong>2. Template Group…</strong> 创建一个新的模板组，名为：Custom.</p><p><img src="https://i.loli.net/2019/01/25/5c4a79e058650.png" alt="android-studio-config-setp-21.png"></p><p>选中新建的 Custom 模板组，点击右侧的 <strong>+</strong> 按钮，选择 <strong>1. Live Template</strong> 创建一个新的动态模板</p><p><img src="https://i.loli.net/2019/01/25/5c4a8362a2c26.png" alt="android-studio-config-setp-24.png"></p><p>设置动态模板的缩写 <strong>Abbreviation</strong> ，描述 <strong>Description</strong>， 以及模板内的代码内容 <strong>Template test</strong>，此处按照如下配置即可。</p><ul><li>Abbreviation：handler</li><li>Description: Self-defined Handler without Memory Leakage.</li><li>Template test: 见下方代码</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">MyHandler</span> <span class="keyword">extends</span> <span class="title">Handler</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> WeakReference&lt;$ClassName$&gt; mActivityWeakReference;</span><br><span class="line"></span><br><span class="line">    MyHandler($ClassName$ activity) &#123;</span><br><span class="line">        mActivityWeakReference = <span class="keyword">new</span> WeakReference&lt;&gt;(activity);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">handleMessage</span><span class="params">(Message msg)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.handleMessage(msg);</span><br><span class="line">        $ClassName$ activity = mActivityWeakReference.get();</span><br><span class="line">        <span class="keyword">if</span> (activity != <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">switch</span> (msg.what) &#123;</span><br><span class="line">                <span class="keyword">default</span>:</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><img src="https://i.loli.net/2019/01/25/5c4a82286cc5a.png" alt="android-studio-config-setp-25.png"></p><p>如上图所示点击下方的 <strong>Define</strong> 并勾选 <strong>Java</strong>，以设置此代码的语言。</p><p><img src="https://i.loli.net/2019/01/25/5c4a84cce2a00.png" alt="android-studio-config-setp-26.png"></p><p>如上图所示，在代码块中，有 <strong>$ClassName$</strong> 参数，此参数对应的是 Handler 所在的 Activity 的类名。为了适配所有的类，所以可以使用绑定参数的方式在自动生成代码时，将 <strong>$ClassName$</strong> 参数替换成其所在类的类名。</p><p>点击 <strong>Edit variables</strong> 按钮，在弹出框中，点击 <strong>Expression</strong> ，在下拉列表中找到并选择 <strong>className()</strong> 即可。点击 <strong>OK</strong> 完成配置。</p><p>参数含义：</p><table><thead><tr><th>Name</th><th>Expression</th><th>Default value</th><th>Skip if defined</th></tr></thead><tbody><tr><td>名称</td><td>表达式</td><td>默认值</td><td>是否略过定义</td></tr><tr><td>ClassName</td><td>className()</td><td></td><td></td></tr></tbody></table><p>配置完动态模板后，我们来新建一个 TestActivity 测试一下。</p><p><img src="https://i.loli.net/2019/01/25/5c4a8748ab822.png" alt="android-studio-config-setp-27.png"></p><p>如上图所示，只要输入 <strong>handler</strong> 就会出现动态模板，选择之后就会自动生成下方的代码，再也不用一次又一次的重复敲代码了。</p><h2 id="其他章节"><a href="#其他章节" class="headerlink" title="其他章节"></a>其他章节</h2><ul><li><a href="http://dkylin.com/archives/2019/android-studio-installation.html">Android Studio 超详细安装教程</a></li><li><a href="http://dkylin.com/archives/2019/android-studio-quality-plugins.html">Android Studio 中那些最好用的插件</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Android </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Android </tag>
+            
+            <tag> Android Studio </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Android Studio 超详细安装教程</title>
+      <link href="/archives/2019/android-studio-installation.html"/>
+      <url>/archives/2019/android-studio-installation.html</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://i.loli.net/2019/01/24/5c49c4d7bc787.jpeg" alt="Android-Studio-3.0-logo.jpeg"></p><p>作为 Android 开发者，Android Studio 是我们必不可少的开发工具之一，甚至是最重要的开发工具。那么了解 Android Studio 并熟悉其各种配置是居家旅行并不可少的技能之一了。</p><p>本文将详细介绍 Android Studio 的下载安装，以及一些必要的设置。</p><a id="more"></a><h2 id="一、安装环境及下载资源"><a href="#一、安装环境及下载资源" class="headerlink" title="一、安装环境及下载资源"></a>一、安装环境及下载资源</h2><h3 id="1-1-安装环境"><a href="#1-1-安装环境" class="headerlink" title="1.1 安装环境"></a>1.1 安装环境</h3><ul><li>电脑系统 : Windows 10</li><li>JDK 版本 : 1.8</li><li>Android Studio : 3.2.1</li></ul><blockquote><p>注：安装环境一般来说不影响 Android Studio 的安装。</p></blockquote><h3 id="1-2-下载资源"><a href="#1-2-下载资源" class="headerlink" title="1.2 下载资源"></a>1.2 下载资源</h3><ul><li><a href="https://developer.android.com/studio/?hl=zh-cn" target="_blank" rel="noopener">官方下载地址(需翻墙)</a></li><li><a href="http://www.android-studio.org/" target="_blank" rel="noopener">国内Android Studio下载地址(不需翻墙)</a></li></ul><p>官方下载地址是需要翻墙才可以进入并且下载的，国内下载地址虽然可以不用翻墙，但是国内的往往不是最新版本的Android Studio ，如果需要体验最新版本的 Android Studio 还请前往官方下载地址进行下载安装。</p><h2 id="二、安装-Android-Studio"><a href="#二、安装-Android-Studio" class="headerlink" title="二、安装 Android Studio"></a>二、安装 Android Studio</h2><h3 id="2-1-安装-Android-Studio"><a href="#2-1-安装-Android-Studio" class="headerlink" title="2.1 安装 Android Studio"></a>2.1 安装 Android Studio</h3><p>下载完了 Android Studio 的安装包之后，双击打开进行安装。</p><p><img src="https://i.loli.net/2019/01/24/5c49cf387294c.png" alt="android-studio-install-setp-1.png"></p><p>点击 <strong>Next</strong> 进行下一步。</p><p><img src="https://i.loli.net/2019/01/24/5c49cf38743d0.png" alt="android-studio-install-setp-2.png"></p><p>勾选 <strong>Android Virtual Device</strong> 选项，然后点击 <strong>Next</strong> 进行下一步。</p><p><img src="https://i.loli.net/2019/01/24/5c49cf386d4a1.png" alt="android-studio-install-setp-3.png"></p><p>选择 Android Studio 安装的本地路径，个人建议不要安装在C盘。</p><p><img src="https://i.loli.net/2019/01/24/5c49cf3870c34.png" alt="android-studio-install-setp-4.png"></p><p>前面的安装设置完成之后，直接点击 <strong>Install</strong> 进行安装即可，然后就是等待安装完成了。</p><p><img src="https://i.loli.net/2019/01/24/5c49d0f92fd85.png" alt="android-studio-install-setp-5.png"></p><p><img src="https://i.loli.net/2019/01/24/5c49d0f941577.png" alt="android-studio-install-setp-6.png"></p><p>安装完后之后点击 <strong>Finish</strong> 将会启动 Android Studio，此时将会进行一些第一次启动前的初步设置。</p><h3 id="2-2-初步设置"><a href="#2-2-初步设置" class="headerlink" title="2.2 初步设置"></a>2.2 初步设置</h3><p>第一次启动 Android Studio 将会进行一些初步的设置。</p><p><img src="https://i.loli.net/2019/01/24/5c49d1a7d56e4.png" alt="android-studio-config-setp-1.png"></p><p>现在的 Android Studio 安装包仅包含其本身，并不包含 <strong>Android SDK</strong>， 所以在第一次启动时告诉你无法访问 Android SDK 加载项列表，此时点击 <strong>Cancel</strong> 退出即可，后面会下载 SDK 的。</p><p><img src="https://i.loli.net/2019/01/24/5c49d1a7e2126.png" alt="android-studio-config-setp-2.png"></p><p>点击 <strong>Next</strong> 进行下一步。</p><p><img src="https://i.loli.net/2019/01/24/5c49d1a7f316c.png" alt="android-studio-config-setp-3.png"></p><p>这里是选择 Android Studio 的设置类型，<strong>Standard</strong> 为标准模式，想省事的可以选择这个选项，会跳过后续的一些设置步骤。这里我们习惯性选择 <strong>Custom</strong> 自定义模式。</p><p><img src="https://i.loli.net/2019/01/24/5c49d1a809a80.png" alt="android-studio-config-setp-4.png"></p><p>这里是选择软件的界面主题，一种偏暗的 <strong>Darcula</strong>,和一种偏亮的 <strong>Intellij</strong>，按照自己的习惯选择就好，个人比较喜欢 <strong>Darcula</strong> 主题。</p><p><img src="https://i.loli.net/2019/01/24/5c49d1a8131f9.png" alt="android-studio-config-setp-5.png"></p><p>这里是进行 SDK 组件设置，因为我已经安装了 <strong>Android SDK</strong> 和 <strong>Android Virtual Device</strong> 所以这里已经不需要再进行安装了。如果你没有安装的话，在左侧选项中勾选你需要安装的项目，建议全部勾选。同时在下面的 <strong>Android SDK Location</strong> 中设置 <strong>Android SDK</strong> 的本地路径。设置完毕后点击 <strong>Next</strong> 进行安装。</p><p><img src="https://i.loli.net/2019/01/24/5c49d1a800acc.png" alt="android-studio-config-setp-6.png"></p><p>这里是对你之前的选择，进行确认的，如果需要修改设置的话，点击 <strong>Previous</strong> 返回上一条进行修改。如果确认如此设置的话，点击 <strong>Finish</strong> 进行设置，等待完成即可。</p><p><img src="https://i.loli.net/2019/01/24/5c49d1a802769.png" alt="android-studio-config-setp-7.png"></p><p>因为我已经提前安装完了 <strong>Android SDK</strong> 所以这里显示 “Nothing to do!”， 如果你并没有安装过 Android SDK的话，此时将会下载 Android SDK 相应的资源。下载完成后点击 <strong>Finish</strong> 完成。</p><p><img src="https://i.loli.net/2019/01/24/5c49d575aecb2.png" alt="android-studio-complete.png"></p><p>到此已经完成了 Android Studio 的下载安装及初步设置。我们可以愉快的使用 Android Studio 进行 Android 开发了。</p><h2 id="后续章节"><a href="#后续章节" class="headerlink" title="后续章节"></a>后续章节</h2><p>安装完 Android Studio ，必不可少的要做一些设置，添加一些好用的插件，让我们的开发工具更加好用，更加得心应手，详情请见以下后续章节。</p><ul><li><a href="http://dkylin.com/archives/2019/android-studio-necessary-config.html">Android Studio 安装后必做的配置</a></li><li><a href="http://dkylin.com/archives/2019/android-studio-quality-plugins.html">Android Studio 中那些最好用的插件</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Android </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Android </tag>
+            
+            <tag> Android Studio </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>七牛云测试域名过期后如何备份文件</title>
       <link href="/archives/2019/qiniu-backup-images.html"/>
       <url>/archives/2019/qiniu-backup-images.html</url>
@@ -346,9 +427,9 @@
             
             <tag> Android </tag>
             
-            <tag> Alipay </tag>
-            
             <tag> 移动支付 </tag>
+            
+            <tag> Alipay </tag>
             
         </tags>
       
